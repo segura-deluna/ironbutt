@@ -1,0 +1,38 @@
+.slider {
+  margin-bottom: 150px;
+  &__iron {
+    width: 1280px;
+    height: 600px;
+  }
+
+  &__iron-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05), inset 0px -4px 4px rgba(0, 0, 0, 0.05),
+      inset 4px 0px 4px rgba(0, 0, 0, 0.05), inset -4px 0px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 12px;
+    margin: 30px auto 0;
+    cursor: pointer;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 12px;
+  border-radius: 0;
+  border: 1px solid var(--cerulean);
+  opacity: 1;
+  background: var(--white);
+  margin: 0 2px important;
+  transform: skew(-25deg);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}

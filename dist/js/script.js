@@ -1,65 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
   // * Sliders ================
-  // const brandCar = new Swiper('#brandCar', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  //   breakpoints: {
-  //     1200: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 20,
-  //     },
-  //   },
-  // });
-  //
-  // const shops = new Swiper('#shops', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  //   breakpoints: {
-  //     1200: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 20,
-  //     },
-  //   },
-  // });
-  // const hotForum = new Swiper('#hotForum', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  //   breakpoints: {
-  //     1200: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 20,
-  //     },
-  //   },
-  // });
-  //
-  // const hints = new Swiper('#hints', {
-  //   watchSlidesProgress: true,
-  //   watchSlidesVisibility: true,
-  //   slidesPerView: 1,
-  //   loop: true,
-  //   navigation: {
-  //     nextEl: '.slider-arrow-right',
-  //     prevEl: '.slider-arrow-left',
-  //   },
-  // });
+  const ironSlider = new Swiper('.slider__iron', {
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+    },
+  });
+
   // * TABS ===========================
   // const tabs = (headerSelector, tabSelector, contentSelector, activeClass) => {
   //   const header = document.querySelector(headerSelector),

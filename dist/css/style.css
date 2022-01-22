@@ -56,7 +56,7 @@ html {
 
 body {
   background-color: var(--main-bg);
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
   line-height: 1.5;
 }
@@ -102,6 +102,7 @@ li {
   filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.06));
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 @media (max-width: 996px) {
   .header-desktop {
@@ -201,7 +202,7 @@ li {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
@@ -283,7 +284,7 @@ li {
   }
 }
 .header-mobile__logo {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   color: var(--white);
@@ -460,6 +461,52 @@ li {
     opacity: 1;
   }
 }
+.slider {
+  margin-bottom: 150px;
+}
+.slider__iron {
+  width: 1280px;
+  height: 600px;
+}
+.slider__iron-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05), inset 0px -4px 4px rgba(0, 0, 0, 0.05), inset 4px 0px 4px rgba(0, 0, 0, 0.05), inset -4px 0px 4px rgba(0, 0, 0, 0.05);
+}
+.slider__arrow {
+  width: 24px;
+  height: 12px;
+  margin: 30px auto 0;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 12px;
+  border-radius: 0;
+  border: 1px solid var(--cerulean);
+  opacity: 1;
+  background: var(--white);
+  margin: 0 2px important;
+  transform: skew(-25deg);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.sertificat__header {
+  width: 100%;
+  max-width: 760px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 48px;
+  color: var(--text-black);
+  margin-bottom: 50px;
+}
 .footer {
   padding: 50px 0 30px;
   background: var(--footer-bg);
@@ -628,7 +675,7 @@ li {
   color: var(--cerulean);
 }
 .footer__brend {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 30px;
@@ -680,7 +727,7 @@ li {
 }
 .footer__confirm {
   display: block;
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 17px;
@@ -713,7 +760,7 @@ li {
   }
 }
 .footer__name {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 17px;
