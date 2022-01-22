@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--white);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05), inset 0px -4px 4px rgba(0, 0, 0, 0.05),
       inset 4px 0px 4px rgba(0, 0, 0, 0.05), inset -4px 0px 4px rgba(0, 0, 0, 0.05);
   }

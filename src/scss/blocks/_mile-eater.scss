@@ -1,0 +1,66 @@
+.mile {
+  padding: 120px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 515px;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--text-black);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--text-black);
+    margin-bottom: 10px;
+  }
+
+  &__subtext {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 18px;
+    font-weight: 600;
+    color: var(--text-black);
+    margin-bottom: 15px;
+  }
+
+  &__table {
+    width: 730px;
+    height: 350px;
+    border: 1px solid var(--cerulean);
+  }
+
+  &__button {
+    display: block;
+    max-width: 282px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 24px;
+    margin-top: -40px;
+    color: var(--text-black);
+    border: 1px solid var(--cerulean);
+  }
+}
