@@ -11,12 +11,21 @@
   }
 
   &__steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__step {
   }
 
   &__step-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.2rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 88px;
+    color: var(--text-black);
   }
 
   &__step-text {

@@ -2,7 +2,7 @@
   font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-BlackItalic.woff") format("woff"), url("../fonts/Montserrat-BlackItalic.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
@@ -30,7 +30,7 @@
   font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
 }
 :root {
@@ -506,6 +506,19 @@ li {
   line-height: 48px;
   color: var(--text-black);
   margin-bottom: 50px;
+}
+.sertificat__steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sertificat__step-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7.2rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 88px;
+  color: var(--text-black);
 }
 .footer {
   padding: 50px 0 30px;
