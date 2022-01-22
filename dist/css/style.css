@@ -497,7 +497,10 @@ li {
   background: #007aff;
 }
 
-.sertificat__header {
+.steps {
+  margin-bottom: 120px;
+}
+.steps__header {
   width: 100%;
   max-width: 760px;
   font-family: "Montserrat", sans-serif;
@@ -507,12 +510,30 @@ li {
   color: var(--text-black);
   margin-bottom: 50px;
 }
-.sertificat__steps {
+.steps__steps {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
-.sertificat__step-header {
+.steps__step {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding-top: 84px;
+}
+.steps__step:nth-child(1)::after, .steps__step:nth-child(2)::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 300px;
+  height: 1px;
+  top: 155px;
+  right: -190px;
+  background: linear-gradient(213.97deg, #01a0e2 20.13%, #01a0e2 67.14%, rgba(1, 160, 226, 0) 100%);
+  transform: rotate(120deg);
+}
+.steps__step-header {
   font-family: "Montserrat", sans-serif;
   font-size: 7.2rem;
   font-weight: 900;
@@ -520,6 +541,79 @@ li {
   line-height: 88px;
   color: var(--text-black);
 }
+.steps__step-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-black);
+}
+.steps__step-text span {
+  color: var(--cerulean);
+}
+.steps__step-button {
+  display: block;
+  max-width: 176px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--text-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  border: 1px solid var(--cerulean);
+}
+
+.sertificat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 140px;
+}
+.sertificat__header {
+  max-width: 515px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--text-black);
+  margin-bottom: 50px;
+}
+.sertificat__text {
+  width: 100%;
+  max-width: 765px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-black);
+  margin-bottom: 15px;
+}
+.sertificat__buttons {
+  display: flex;
+  margin-top: 50px;
+}
+.sertificat__button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-black);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  width: 124px;
+  border: 2px dashed var(--cerulean);
+  margin-right: 8px;
+}
+.sertificat__img {
+  width: 330px;
+  height: 430px;
+}
+
 .footer {
   padding: 50px 0 30px;
   background: var(--footer-bg);

@@ -1,36 +1,55 @@
 .sertificat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 140px;
+  &__description {
+  }
+
   &__header {
-    width: 100%;
-    max-width: 760px;
+    max-width: 515px;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 50px;
     color: var(--text-black);
     margin-bottom: 50px;
   }
 
-  &__steps {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__step {
-  }
-
-  &__step-header {
+  &__text {
+    width: 100%;
+    max-width: 765px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 7.2rem;
-    font-weight: 900;
-    font-style: italic;
-    line-height: 88px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 30px;
     color: var(--text-black);
+    margin-bottom: 15px;
   }
 
-  &__step-text {
+  &__buttons {
+    display: flex;
+    margin-top: 50px;
   }
 
-  &__step-button {
+  &__button {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-black);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    width: 124px;
+    border: 2px dashed var(--cerulean);
+    margin-right: 8px;
+  }
+
+  &__img {
+    width: 330px;
+    height: 430px;
   }
 }
