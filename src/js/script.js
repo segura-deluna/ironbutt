@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  tabs('.registration__tab-triggers', '.registration__tab-trigger', '.registration__tab-item', 'active');
+  tabs('.tab-triggers', '.tab-trigger', '.tab-item', 'active');
 
   // * Dropdown ===========================
   // const accordions = document.querySelectorAll('.dropdown');
