@@ -1,6 +1,22 @@
 .events {
   padding: 120px 0 240px;
 
+  @media (max-width: 1280px) {
+    padding: 0 0 80px;
+  }
+
+  &__wrapper {
+    @media (max-width: 1280px) {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 760px) {
+      padding: 0 20px;
+    }
+  }
+
   &__title {
     margin-bottom: 50px;
   }
@@ -11,6 +27,13 @@
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 20px;
+    }
   }
 
   &__item {
@@ -20,18 +43,33 @@
 
   &__item1 {
     grid-area: 1 / 1 / 3 / 2;
+    @media (max-width: 1280px) {
+      grid-area: 1 / 1 / 4 / 2;
+    }
   }
   &__item2 {
     grid-area: 1 / 2 / 2 / 3;
+    @media (max-width: 1280px) {
+      grid-area: 4 / 1 / 5 / 2;
+    }
   }
   &__item3 {
     grid-area: 1 / 3 / 2 / 4;
+    @media (max-width: 1280px) {
+      grid-area: 5 / 1 / 6 / 2;
+    }
   }
   &__item4 {
     grid-area: 2 / 2 / 3 / 3;
+    @media (max-width: 1280px) {
+      grid-area: 6 / 1 / 7 / 2;
+    }
   }
   &__item5 {
     grid-area: 2 / 3 / 3 / 4;
+    @media (max-width: 1280px) {
+      grid-area: 7 / 1 / 8 / 2;
+    }
   }
 
   &__img {

@@ -55,4 +55,9 @@ li {
   font-weight: 600;
   line-height: 48px;
   color: var(--text-black);
+
+  @media (max-width: 1280px) {
+    font-size: 3rem;
+    line-height: 36px;
+  }
 }

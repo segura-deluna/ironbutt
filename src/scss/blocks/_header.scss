@@ -141,6 +141,10 @@
     width: 175px;
   }
 
+  @media (max-width: 1280px) {
+    margin-left: 15px;
+  }
+
   @media (max-width: 996px) {
     background-color: transparent;
   }
