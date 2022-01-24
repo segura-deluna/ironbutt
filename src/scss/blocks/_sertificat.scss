@@ -25,6 +25,10 @@
       padding: 0 20px;
       margin: 0 auto;
     }
+
+    @media (max-width: 400px) {
+      padding: 0 10px;
+    }
   }
 
   &__description {
@@ -34,6 +38,10 @@
     @media (max-width: 1024px) {
       max-width: 720px;
       margin: 0 auto;
+    }
+
+    @media (max-width: 400px) {
+      padding: 0 10px;
     }
   }
 
@@ -129,6 +137,8 @@
     }
 
     @media (max-width: 480px) {
+      width: 300px;
+      height: 400px;
       margin: 0 auto 50px;
     }
   }
