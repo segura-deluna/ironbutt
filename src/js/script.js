@@ -38,8 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
       tab[i].classList.add(activeClass);
     }
 
+    function responce() {
+      if (window.screen.width <= 740) {
+      }
+    }
+
     hideTabContent();
     showTabContent();
+    responce();
     header.addEventListener('click', (e) => {
       const target = e.target;
       if (
