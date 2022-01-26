@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // * Burger ================
+  document.querySelector('.burger__button').onclick = function () {
+    document.querySelector('.burger__button-icon').classList.toggle('active');
+    document.querySelector('.burger__menu').classList.toggle('active');
+  };
+
   // * Sliders ================
   const ironSlider = new Swiper('.slider__iron', {
     watchSlidesProgress: true,
@@ -75,9 +81,4 @@ document.addEventListener('DOMContentLoaded', () => {
   //   });
   // }
   //
-  // * Burger ================
-  document.querySelector('.burger__button').onclick = function () {
-    document.querySelector('.burger__button-icon').classList.toggle('active');
-    document.querySelector('.burger__menu').classList.toggle('active');
-  };
 });
