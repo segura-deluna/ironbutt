@@ -322,6 +322,9 @@ li {
     letter-spacing: 2%;
   }
 }
+.header-mobile__logo-link {
+  text-decoration: none;
+}
 
 .burger__button {
   width: 50px;
