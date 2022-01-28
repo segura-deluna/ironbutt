@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include('_head.html')
+	<title>Профиль</title>
+</head>
+
+<body>
+
+	<div class="body-wrapper">
+
+		<!--	HEADER -->
+		@@include('_header.html')
+
+		<div class="account">
+			<div class="container">
+				<div class="account__wrapper">
+
+					<div class="account__table">
+						<div class="account__marks">
+							<div class="account__img">
+								<img src="img/photo-placeholder.jpg" alt="avatar">
+								<img src="img/edit.svg" alt="edit" class="account__pen">
+								<img src="img/trash.svg" alt="trash" class="account__trash">
+							</div>
+							<!-- /.account__img -->
+
+							<div class="account__mark-items tab-triggers">
+								<div class="account__mark-item tab-trigger">Профиль</div>
+								<!-- /.account__mark-item -->
+								<div class="account__mark-item tab-trigger">Номинации</div>
+								<!-- /.account__mark-item -->
+								<div class="account__mark-item tab-trigger">Заявки</div>
+								<!-- /.account__mark-item -->
+								<div class="account__mark-item tab-trigger">Новая заявка</div>
+								<!-- /.account__mark-item -->
+
+								<!-- MOBILE APP -->
+								<div class="account__app">
+									<h3 class="account__app-title">Мобильное приложение</h3>
+									<!-- /.account__app-title -->
+									<img src="img/qr-code.jpg" alt="qr-code" class="account__app-img">
+									<p class="account__app-descr">
+										Для Android находится в режиме бета
+									</p>
+									<!-- /.account__app-descr -->
+								</div>
+								<!-- /.account__app -->
+							</div>
+							<!-- /.account__mark-items -->
+
+
+						</div>
+						<!-- /.account__marks -->
+
+						<div class="account__content">
+
+							<div class="account__content-item content-item tab-item">
+
+								<div class="content-item__inputs content-item__name">
+									<div class="content-item__input content-item__input-first-name">
+										<label for="first">Имя</label>
+										<input type="text" name="" id="first" placeholder="Введите имя">
+									</div>
+									<!-- /.content-item__input content-item__input-first-name -->
+
+									<div class="content-item__input content-item__input-last-name">
+										<label for="last">Фамилия</label>
+										<input type="text" name="" id="last" placeholder="Введите фамилию">
+									</div>
+									<!-- /.content-item__input content-item__input-last-name -->
+								</div>
+								<!-- /.content-item__name -->
+
+								<div class="content-item__inputs content-item__mail">
+									<div class="content-item__input content-item__input-visible">
+										<label for="visible">Отображаемое имя</label>
+										<input type="text" name="" id="visible" placeholder="Введите имя">
+									</div>
+									<!-- /.content-item__input content-item__input-visible -->
+
+									<div class="content-item__input content-item__input-mail">
+										<label for="mail">Электронная почта*</label>
+										<input type="mail" name="" id="mail" placeholder="Введите электронную почту">
+									</div>
+									<!-- /.content-item__input content-item__input-mail -->
+								</div>
+								<!-- /.content-item__mail -->
+
+								<div class="content-item__inputs content-item__pass">
+									<div class="content-item__input content-item__input-pass">
+										<label for="pass1">Новый пароль</label>
+										<input type="password" name="" id="pass1">
+									</div>
+									<!-- /.content-item__input content-item__input-pass -->
+								</div>
+								<!-- /.content-item__pass -->
+
+								<div class="content-item__inputs content-item__save">
+									<div class="content-item__input content-item__input-pass">
+										<label for="pass2">Повтор пароля</label>
+										<input type="password" name="" id="pass2">
+									</div>
+									<!-- /.content-item__input content-item__input-pass -->
+
+									<div class="content-item__input content-item__save-button">
+										<p class="content-item__save-text">Сохранить изменения</p>
+										<!-- /.content-item__save-text -->
+										<button class="content-item__save-click">
+											<img src="img/save.svg" alt="save" class="content-item__save-click-img">
+										</button>
+										<!-- /.content-item__save-click -->
+									</div>
+									<!-- /.content-item__save-button -->
+								</div>
+								<!-- /.content-item__save -->
+
+							</div>
+							<!-- /.account__content-item -->
+
+
+							<div class="account__content-item content-item tab-item">
+								<div class="content-item__nomination">
+									<div class="content-item__nomination-item nomination-item">
+										<div class="nomination-item__title">
+											<div class="nomination-item__title-text">
+												Медвежья Миля (1000 километров менее чем за 24 часа зимой,
+												севернее Мюнхена-Киева-Воронежа) норматив ВВМС
+											</div>
+											<!-- /.nomination-item__title-text -->
+											<div class="nomination-item__title-icon">
+											</div>
+											<!-- /.nomination-item__title-icon -->
+										</div>
+										<!-- /.nomination-item__title -->
+										<div class="nomination-item__content">
+											<ul class="nomination-item__list">
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
+													<div class="nomination-item__count">2002-07-31 </div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Honda CBR1100XXX </div>
+													<div class="nomination-item__count"></div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Общий пробег</div>
+													<div class="nomination-item__count">1 625 км</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Время в пути</div>
+													<div class="nomination-item__count">23 ч. 36 мин.</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Средняя скорость</div>
+													<div class="nomination-item__count">68,88 км/ч</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Максимальная скорость</div>
+													<div class="nomination-item__count">в разработке</div>
+												</li>
+											</ul>
+											<!-- /.nomination-item__descr -->
+											<div class="nomination-item__map">
+												<img src="img/map.jpg" alt="map">
+											</div>
+											<!-- /.nomination-item__map -->
+										</div>
+										<!-- /.nomination-item__content -->
+									</div>
+									<!-- /.content-item__nomination-item -->
+
+									<div class="content-item__nomination-item nomination-item">
+										<div class="nomination-item__title">
+											<div class="nomination-item__title-text">
+												SaddleSore 1000/1600K (1000 miles or 1600 km in less than 24 hours)
+											</div>
+											<!-- /.nomination-item__title-text -->
+											<div class="nomination-item__title-icon">
+											</div>
+											<!-- /.nomination-item__title-icon -->
+										</div>
+										<!-- /.nomination-item__title -->
+										<div class="nomination-item__content">
+											<ul class="nomination-item__list">
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
+													<div class="nomination-item__count">2002-07-31 </div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Honda CBR1100XXX </div>
+													<div class="nomination-item__count"></div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Общий пробег</div>
+													<div class="nomination-item__count">1 625 км</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Время в пути</div>
+													<div class="nomination-item__count">23 ч. 36 мин.</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Средняя скорость</div>
+													<div class="nomination-item__count">68,88 км/ч</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Максимальная скорость</div>
+													<div class="nomination-item__count">в разработке</div>
+												</li>
+											</ul>
+											<!-- /.nomination-item__descr -->
+											<div class="nomination-item__map">
+												<img src="img/map.jpg" alt="map">
+											</div>
+											<!-- /.nomination-item__map -->
+										</div>
+										<!-- /.nomination-item__content -->
+									</div>
+									<!-- /.content-item__nomination-item -->
+
+									<div class="content-item__nomination-item nomination-item">
+										<div class="nomination-item__title">
+											<div class="nomination-item__title-text">
+												Россия 2500 (2500 километров по России менее чем за 24 часа)
+											</div>
+											<!-- /.nomination-item__title-text -->
+											<div class="nomination-item__title-icon">
+											</div>
+											<!-- /.nomination-item__title-icon -->
+										</div>
+										<!-- /.nomination-item__title -->
+										<div class="nomination-item__content">
+											<ul class="nomination-item__list">
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
+													<div class="nomination-item__count">2002-07-31 </div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Honda CBR1100XXX </div>
+													<div class="nomination-item__count"></div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Общий пробег</div>
+													<div class="nomination-item__count">1 625 км</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Время в пути</div>
+													<div class="nomination-item__count">23 ч. 36 мин.</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Средняя скорость</div>
+													<div class="nomination-item__count">68,88 км/ч</div>
+												</li>
+												<li class="nomination-item__descr">
+													<div class="nomination-item__name">Максимальная скорость</div>
+													<div class="nomination-item__count">в разработке</div>
+												</li>
+											</ul>
+											<!-- /.nomination-item__descr -->
+											<div class="nomination-item__map">
+												<img src="img/map.jpg" alt="map">
+											</div>
+											<!-- /.nomination-item__map -->
+										</div>
+										<!-- /.nomination-item__content -->
+									</div>
+									<!-- /.content-item__nomination-item -->
+
+								</div>
+								<!-- /.content-item__nomination -->
+							</div>
+							<!-- /.account__content-item -->
+
+
+							<div class="account__content-item content-item tab-item">
+
+							</div>
+							<!-- /.account__content-item -->
+
+
+							<div class="account__content-item content-item tab-item"></div>
+							<!-- /.account__content-item -->
+
+
+						</div>
+						<!-- /.account__content -->
+					</div>
+					<!-- /.account__table -->
+
+
+				</div>
+				<!-- /.account__wrapper -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.account -->
+
+		<!-- FOOTER -->
+		@@include('_footer.html')
+
+
+	</div>
+	<!-- /.body-wrapper -->
+
+	<script src="js/script.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/accordion.js"></script>
+</body>
+
+</html>
