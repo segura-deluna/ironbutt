@@ -2289,6 +2289,9 @@ li {
 .content-item__nomination-item {
   margin-left: 30px;
 }
+.content-item__proposal {
+  width: 100%;
+}
 
 .nomination-item:nth-child(2) .nomination-item__title, .nomination-item:nth-child(3) .nomination-item__title {
   border-top: 0;
@@ -2380,6 +2383,48 @@ li {
   border-bottom: 2px solid var(--text-black);
   transform: translateY(0px);
   transition: all 0.5s ease-in-out;
+}
+
+.proposal-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 0 10px 30px;
+  border-top: 2px solid var(--text-black);
+  border-bottom: 2px solid var(--text-black);
+}
+.proposal-item__title {
+  width: 100%;
+  max-width: 700px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.proposal-item__clause {
+  width: 355px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proposal-item__date {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.proposal-item__button-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 8px 24px;
+  border: 2px solid var(--cerulean);
+}
+.proposal-item__button-icon {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+.proposal-item__delete {
+  width: 24px;
+  height: 24px;
 }
 
 .footer {
