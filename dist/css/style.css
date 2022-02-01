@@ -2841,6 +2841,28 @@ li {
   align-items: center;
 }
 
+.awards-card__wrapper {
+  padding: 100px 0 240px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+.awards-card__img {
+  width: 187px;
+  height: 187px;
+}
+.awards-card__description {
+  width: 100%;
+  max-width: 1040px;
+  padding-top: 10px;
+}
+.awards-card__name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 0 10px 30px;
+}
+
 .footer {
   padding: 50px 0 30px;
   background: var(--footer-bg);
