@@ -1,0 +1,138 @@
+.awards {
+  &__wrapper {
+    padding: 100px 0 240px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__category-choice {
+    width: 100%;
+    max-width: 950px;
+    margin-right: 30px;
+  }
+
+  &__category-choice-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__category-choice-dropdown {
+    width: 100%;
+    height: 38px;
+    background: var(--white);
+    border: 1px solid var(--silver);
+  }
+
+  &__category-search {
+    width: 100%;
+    max-width: 295px;
+  }
+
+  &__category-search-title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__category-search-input {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    background: var(--white);
+    border: 1px solid var(--silver);
+  }
+
+  &__list {
+    width: 100%;
+    max-width: 1255px;
+    margin-right: 0;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__item-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: var(--text-black);
+
+    &:hover {
+      border: 1px solid var(--cerulean);
+      box-sizing: border-box;
+    }
+  }
+
+  &__name {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 30px;
+
+    & span {
+      color: var(--cerulean);
+    }
+  }
+
+  &__geo {
+    width: 100%;
+    max-width: 430px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__city {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__date {
+    width: 100%;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__route {
+    width: 100%;
+    max-width: 420px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__model {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  &__mile {
+    width: 100%;
+    min-width: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
