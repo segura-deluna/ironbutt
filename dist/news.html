@@ -66,14 +66,14 @@
         </li>
         <!-- /.header-desktop__menu-item -->
         <li class="header-desktop__menu-item">
-          <a href="" class="header-desktop__menu-link">
+          <button class="header-desktop__menu-link" data-modal="input-modal">
             <span>
               <div class="header-desktop__menu-link-icon">
                 <img src="img/racing.svg" alt="racing">
               </div>
               <p>Войти в профиль</p>
             </span>
-          </a>
+          </button>
           <!-- /.header-desktop__menu-link -->
         </li>
         <!-- /.header-desktop__menu-item -->
@@ -131,7 +131,7 @@
             </li>
             <!-- /.burger__menu-item -->
             <li class="burger__menu-item">
-              <a href="" class="burger__menu-link">Войти в профиль</a>
+              <button class="burger__menu-link" data-modal="input-modal">Войти в профиль</button>
               <!-- /.burger__menu-link -->
             </li>
             <!-- /.burger__menu-item -->
@@ -178,6 +178,107 @@
     <!-- /.header-mobile__burger -->
   </div>
   <!-- /.header-mobile -->
+
+  <!-- MODALS -->
+  <div class="modal" id="input-modal">
+
+	<div class="modal__content">
+		<div class="modal__header">
+			<h2 class="modal-input__title">Авторизация</h2>
+			<div class="modal__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<!-- /.modal__close -->
+		</div>
+		<!-- /.modal__header -->
+
+		<form action="" class="modal-input__form form">
+			<p class="form__label">Логин</p>
+			<input type="text" class="form__input" placeholder="Введите логин">
+			<div class="form__title">
+				<p class="form__label">Пароль</p>
+				<!-- /.form__label -->
+				<a href="" class="form__pass-link">Забыли пароль?</a>
+				<!-- /.form__pass-link -->
+			</div>
+			<!-- /.form__title -->
+			<div class="form__input-pass">
+				<input type="password" class="form__input" placeholder="Введите пароль">
+				<!-- /.form__input -->
+				<button class="form__pass-eye">
+					<img src="img/eye.svg" alt="eye">
+				</button>
+			</div>
+			<!-- /.form__input-pass -->
+
+			<div class="form__remember">
+				<div class=" form__politics">
+
+					<label class="form__check-label">
+						<input type="checkbox" class="form__check">
+						<span class="form__checkbox"></span>
+						Запомнить
+					</label>
+				</div>
+				<!-- /.form__politics -->
+			</div>
+			<!-- /.form__remember -->
+			<div class="form__footer">
+				<button class="form__submit-input" type="submit">Войти</button>
+				<!-- /.form__submit -->
+				<div class="modal-input__inputistration">
+					<p class="modal-input__question">Нет учётной записи?</p>
+					<!-- /.modal-input__question -->
+					<button class="modal-input__link-registration" data-modal="registr-modal">Регистрация</button>
+					<!-- /.modal-input__link -->
+				</div>
+				<!-- /.modal-input__inputistration -->
+			</div>
+			<!-- /.form__footer -->
+		</form>
+		<!-- /.modal-input__form -->
+
+	</div>
+	<!-- /.modal-content -->
+</div>
+<!-- /.modal -->
+
+  <div class="modal" id="registr-modal">
+
+	<div class="modal__content">
+		<div class="modal__header">
+			<h2 class="modal-input__title">Регистрация</h2>
+			<div class="modal__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<!-- /.modal__close -->
+		</div>
+		<!-- /.modal__header -->
+
+		<form action="" class="modal-input__form form">
+			<p class="form__label">Логин</p>
+			<input type="text" class="form__input" placeholder="Введите логин">
+			<p class="form__label">Электронная почта</p>
+			<input type="email" class="form__input" placeholder="Введите электронную почту">
+			<div class="form__input-pass">
+				<input type="password" class="form__input" placeholder="Введите пароль">
+				<!-- /.form__input -->
+				<button class="form__pass-eye">
+					<img src="img/eye.svg" alt="eye">
+				</button>
+			</div>
+			<!-- /.form__input-pass -->
+
+			<button class="form__submit-reg" type="submit">Зарегистрироваться</button>
+
+		</form>
+		<!-- /.modal-input__form -->
+
+	</div>
+	<!-- /.modal-content -->
+</div>
+<!-- /.modal -->
+
 </header>
 <!-- /.header -->
 
