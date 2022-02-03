@@ -504,6 +504,19 @@ li {
   border: none;
   background: var(--white);
 }
+.burger__menu-tooltip {
+  display: none;
+}
+.burger__menu-tooltip-item {
+  padding: 5px 0 5px 20px;
+}
+.burger__menu-tooltip-link {
+  text-decoration: none;
+  color: var(--text-black);
+}
+.burger__menu-link.active + .burger__menu-tooltip {
+  display: block;
+}
 .burger__menu-social {
   width: 184px;
   height: 106px;

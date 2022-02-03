@@ -360,6 +360,23 @@
       background: var(--white);
     }
 
+    &-tooltip {
+      display: none;
+    }
+
+    &-tooltip-item {
+      padding: 5px 0 5px 20px;
+    }
+
+    &-tooltip-link {
+      text-decoration: none;
+      color: var(--text-black);
+    }
+
+    &-link.active + .burger__menu-tooltip {
+      display: block;
+    }
+
     &-social {
       width: 184px;
       height: 106px;
