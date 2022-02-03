@@ -472,11 +472,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 730px) {
+      min-width: 245px;
+    }
+
+    @media (max-width: 600px) {
+      min-width: 85px;
+      margin-left: 25px;
+    }
   }
 
   &__date {
     font-size: 1.8rem;
     font-weight: 600;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__buttons {
@@ -487,12 +500,20 @@
     font-weight: 600;
     padding: 8px 24px;
     border: 2px solid var(--cerulean);
+
+    @media (max-width: 730px) {
+      display: none;
+    }
   }
 
   &__button-icon {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     display: none;
+
+    @media (max-width: 730px) {
+      display: block;
+    }
   }
 
   &__delete {
@@ -982,6 +1003,7 @@
     width: 12px;
     height: 9px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
   }
 
   &__list {
@@ -993,7 +1015,6 @@
   }
 
   &__item {
-    // width: 100%;
     min-height: 38px;
     padding: 0 10px;
     display: flex;
@@ -1003,6 +1024,7 @@
 
     &:hover {
       background: var(--silver);
+      cursor: pointer;
     }
   }
 }
