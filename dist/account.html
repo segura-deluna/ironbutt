@@ -51,8 +51,23 @@
         </li>
         <!-- /.header-desktop__menu-item -->
         <li class="header-desktop__menu-item">
-          <a href="archive.html" class="header-desktop__menu-link"><span>Архив мудрости</span></a>
+          <div class="header-desktop__menu-link"><span>Архив мудрости</span></div>
           <!-- /.header-desktop__menu-link -->
+          <ul class="header-desktop__menu-tooltip">
+            <li class="header-desktop__menu-tooltip-item">
+              <a href="" class="header-desktop__menu-tooltip-link">Saddelesore 1000</a>
+            </li>
+            <!-- /.header-desktop__menu-tooltip-item -->
+            <li class="header-desktop__menu-tooltip-item">
+              <a href="archive.html" class="header-desktop__menu-tooltip-link">Bunburner 1500</a>
+            </li>
+            <!-- /.header-desktop__menu-tooltip-item -->
+            <li class="header-desktop__menu-tooltip-item">
+              <a href="" class="header-desktop__menu-tooltip-link">Какой-то длинный заголовок</a>
+            </li>
+            <!-- /.header-desktop__menu-tooltip-item -->
+          </ul>
+          <!-- /.header-desktop__menu-tooltip -->
         </li>
         <!-- /.header-desktop__menu-item -->
         <li class="header-desktop__menu-item">
@@ -213,7 +228,6 @@
 
 			<div class="form__remember">
 				<div class=" form__politics">
-
 					<label class="form__check-label">
 						<input type="checkbox" class="form__check">
 						<span class="form__checkbox"></span>
@@ -223,6 +237,7 @@
 				<!-- /.form__politics -->
 			</div>
 			<!-- /.form__remember -->
+
 			<div class="form__footer">
 				<button class="form__submit-input" type="submit">Войти</button>
 				<!-- /.form__submit -->
@@ -590,10 +605,36 @@
 									<div class="new-proposal__category">
 										<p class="new-proposal__category-name">Выбор категории</p>
 										<!-- /.new-proposal__category-name -->
-										<div class="new-proposal__category-dropdown">
+										<div class="new-proposal__category-dropdown category-dropdown">
+											<div class="category-dropdown__title nomination-item__title">
+												<div class="category-dropdown__text">
 
+												</div>
+												<!-- /.category-dropdown__text -->
+												<div class="category-dropdown__icon">
+													<img src="img/arrow.svg" alt="arrow">
+												</div>
+												<!-- /.category-dropdown__icon -->
+											</div>
+											<!-- /.category-dropdown__title -->
+											<ul class="category-dropdown__list nomination-item__content">
+												<li class="category-dropdown__item">
+													Россия 2500 (2500 километров по России менее чем за 24 часа)
+												</li>
+												<!-- /.category-dropdown__item -->
+												<li class="category-dropdown__item">
+													SaddleSore 1000/1600K (1000 miles or 1600 km in less than 24 hours)
+												</li>
+												<!-- /.category-dropdown__item -->
+												<li class="category-dropdown__item">
+													Медвежья Миля (1000 километров менее чем за 24 часа зимой,
+													севернее Мюнхена-Киева-Воронежа) норматив ВВМС
+												</li>
+												<!-- /.category-dropdown__item -->
+											</ul>
+											<!-- /.category-dropdown__list -->
 										</div>
-										<!-- /.new-proposal__category-dropdown -->
+										<!-- /.new-proposal__category-dropdown .category-dropdown -->
 									</div>
 									<!-- /.new-proposal__category -->
 
@@ -809,6 +850,7 @@
 	<script src="js/script.js"></script>
 	<script src="js/tabs.js"></script>
 	<script src="js/accordion.js"></script>
+	<!-- <script src="js/dropdown.js"></script> -->
 </body>
 
 </html>

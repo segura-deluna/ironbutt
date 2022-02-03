@@ -1,5 +1,6 @@
 .header-desktop {
   position: relative;
+  z-index: 10;
   height: 124px;
   width: 100vw;
   background-color: var(--main-bg);
@@ -72,11 +73,14 @@
   }
 
   &__menu-item {
+    position: relative;
+    z-index: 1000;
     height: 100%;
     width: 100%;
     max-width: max-content;
     transform: skew(-25deg);
     margin-left: 3px;
+    cursor: pointer;
 
     &:nth-child(6) {
       & .header-desktop__menu-link {
@@ -86,6 +90,45 @@
           padding: 16px 20px 16px 15px;
         }
       }
+    }
+  }
+
+  &__menu-tooltip {
+    display: none;
+    width: 276px;
+    position: absolute;
+    z-index: 100;
+    top: 49px;
+    transform: skew(25deg);
+    background: var(--white);
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.15));
+  }
+
+  &__menu-tooltip-item {
+    // display: none;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 5px;
+        height: 100%;
+        background: var(--cerulean);
+      }
+    }
+  }
+
+  &__menu-tooltip-link {
+    display: block;
+    padding: 10px 0 10px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--black);
+    transition: 0.3s ease-in-out;
+    &:hover {
+      font-weight: 700;
     }
   }
 
@@ -108,6 +151,7 @@
 
     &:hover {
       background-color: var(--cerulean);
+      cursor: pointer;
     }
 
     & span {
@@ -129,6 +173,14 @@
     width: 24px;
     height: 24px;
   }
+}
+
+.header-desktop__menu-link:hover + .header-desktop__menu-tooltip {
+  display: block;
+}
+
+.header-desktop__menu-tooltip:hover {
+  display: block;
 }
 
 .logo {
@@ -304,6 +356,8 @@
       color: var(--text-black);
       letter-spacing: 2%;
       text-decoration: none;
+      border: none;
+      background: var(--white);
     }
 
     &-social {
@@ -386,6 +440,10 @@
     opacity: 0;
     transform: translateY(-100px);
     transition: transform 0.3s linear, opacity 0.3s linear;
+
+    @media (max-width: 480px) {
+      padding: 0 15px;
+    }
   }
 
   &__header {
@@ -405,6 +463,14 @@
 
   &__form {
     width: 100%;
+  }
+
+  &__inputistration {
+    @media (max-width: 480px) {
+      position: absolute;
+      right: 0;
+      top: -80px;
+    }
   }
 
   &__link-registration {
@@ -472,6 +538,10 @@
 
   &__remember {
     margin-bottom: 30px;
+
+    @media (max-width: 480px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__check-label {
@@ -480,6 +550,10 @@
     line-height: 24px;
     padding-left: 34px;
     cursor: pointer;
+
+    @media (max-width: 359px) {
+      padding-left: 26px;
+    }
   }
 
   &__check {
@@ -506,6 +580,11 @@
     display: flex;
     justify-content: start;
     align-items: center;
+
+    @media (max-width: 480px) {
+      position: relative;
+      justify-content: space-between;
+    }
   }
 
   &__submit-input {
@@ -518,6 +597,11 @@
     border: none;
     margin-right: 40px;
     cursor: pointer;
+
+    @media (max-width: 480px) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
   &__question {
