@@ -105,7 +105,6 @@
   }
 
   &__menu-tooltip-item {
-    // display: none;
     position: relative;
     transition: 0.3s ease-in-out;
     &:hover {
@@ -220,6 +219,7 @@
   align-items: center;
   @media (max-width: 760px) {
     display: flex;
+    position: fixed;
   }
   @media (max-width: 360px) {
     height: 60px;
