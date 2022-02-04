@@ -1096,6 +1096,10 @@ li {
   text-align: center;
   padding: 8px 24px;
   border: 1px solid var(--cerulean);
+  transition: 0.3s ease-in-out;
+}
+.steps__step-button:hover {
+  background: var(--cerulean);
 }
 @media (max-width: 1280px) {
   .steps__step-button {
@@ -1249,6 +1253,10 @@ li {
   padding: 8px 24px;
   width: 124px;
   border: 2px dashed var(--cerulean);
+  transition: 0.3s ease-in-out;
+}
+.sertificat__button:hover {
+  background: var(--cerulean);
 }
 .sertificat__button:not(:nth-last-child(1)) {
   margin-right: 8px;
@@ -1361,6 +1369,10 @@ li {
   margin-top: -40px;
   color: var(--text-black);
   border: 2px solid var(--cerulean);
+  transition: 0.3s ease-in-out;
+}
+.mile__button:hover {
+  background: var(--cerulean);
 }
 @media (max-width: 1280px) {
   .mile__button {
@@ -3530,8 +3542,7 @@ li {
 }
 .awards__category-choice-list {
   position: absolute;
-  width: 100%;
-  height: auto;
+  width: 99.8%;
   background: var(--white);
   display: flex;
   flex-direction: column;
@@ -3593,6 +3604,8 @@ li {
   font-size: 1.6rem;
   line-height: 24px;
   color: var(--text-black);
+  border: 1px solid var(--main-bg);
+  box-sizing: border-box;
 }
 @media (max-width: 1280px) {
   .awards__item-link {
@@ -3601,7 +3614,6 @@ li {
 }
 .awards__item-link:hover {
   border: 1px solid var(--cerulean);
-  box-sizing: border-box;
 }
 .awards__name {
   width: 100%;

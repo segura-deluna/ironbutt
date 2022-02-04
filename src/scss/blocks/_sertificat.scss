@@ -122,6 +122,12 @@
     padding: 8px 24px;
     width: 124px;
     border: 2px dashed var(--cerulean);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      background: var(--cerulean);
+    }
+
     &:not(:nth-last-child(1)) {
       margin-right: 8px;
     }

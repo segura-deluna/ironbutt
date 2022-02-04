@@ -95,8 +95,7 @@
 
   &__category-choice-list {
     position: absolute;
-    width: 100%;
-    height: auto;
+    width: 99.8%;
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -164,6 +163,8 @@
     font-size: 1.6rem;
     line-height: 24px;
     color: var(--text-black);
+    border: 1px solid var(--main-bg);
+    box-sizing: border-box;
 
     @media (max-width: 1280px) {
       padding: 10px 0;
@@ -171,7 +172,6 @@
 
     &:hover {
       border: 1px solid var(--cerulean);
-      box-sizing: border-box;
     }
   }
 
