@@ -81,7 +81,7 @@
         </li>
         <!-- /.header-desktop__menu-item -->
         <li class="header-desktop__menu-item">
-          <button class="header-desktop__menu-link" data-modal="registr-modal">
+          <button class="header-desktop__menu-link" data-modal="input-modal">
             <span>
               <div class="header-desktop__menu-link-icon">
                 <img src="img/racing.svg" alt="racing">
@@ -210,8 +210,70 @@
   <!-- /.header-mobile -->
 
   <!-- MODALS -->
-  
-  <div class="modal" id="registr-modal">
+  <div class="modal" id="input-modal">
+
+	<div class="modal__content">
+		<div class="modal__header">
+			<h2 class="modal-input__title">Авторизация</h2>
+			<div class="modal__close">
+				<img src="img/close.svg" alt="close">
+			</div>
+			<!-- /.modal__close -->
+		</div>
+		<!-- /.modal__header -->
+
+		<form action="" class="modal-input__form form">
+			<p class="form__label">Логин</p>
+			<input type="text" class="form__input" placeholder="Введите логин">
+			<div class="form__title">
+				<p class="form__label">Пароль</p>
+				<!-- /.form__label -->
+				<a href="" class="form__pass-link">Забыли пароль?</a>
+				<!-- /.form__pass-link -->
+			</div>
+			<!-- /.form__title -->
+			<div class="form__input-pass">
+				<input type="password" class="form__input" placeholder="Введите пароль">
+				<!-- /.form__input -->
+				<button class="form__pass-eye">
+					<img src="img/eye.svg" alt="eye">
+				</button>
+			</div>
+			<!-- /.form__input-pass -->
+
+			<div class="form__remember">
+				<div class=" form__politics">
+					<label class="form__check-label">
+						<input type="checkbox" class="form__check">
+						<span class="form__checkbox"></span>
+						Запомнить
+					</label>
+				</div>
+				<!-- /.form__politics -->
+			</div>
+			<!-- /.form__remember -->
+
+			<div class="form__footer">
+				<button class="form__submit-input" type="submit">Войти</button>
+				<!-- /.form__submit -->
+				<div class="modal-input__inputistration">
+					<p class="modal-input__question">Нет учётной записи?</p>
+					<!-- /.modal-input__question -->
+					<div class="modal-input__link-registration" data-modal="registr-modal">Регистрация</div>
+					<!-- /.modal-input__link -->
+				</div>
+				<!-- /.modal-input__inputistration -->
+			</div>
+			<!-- /.form__footer -->
+		</form>
+		<!-- /.modal-input__form -->
+
+	</div>
+	<!-- /.modal-content -->
+</div>
+<!-- /.modal -->
+
+  <div class="modal modal-reg" id="registr-modal">
 
 	<div class="modal__content">
 		<div class="modal__header">
@@ -227,12 +289,12 @@
 			<p class="form__label">Логин</p>
 			<input type="text" class="form__input" placeholder="Введите логин">
 			<p class="form__label">Электронная почта</p>
-			<input type="email" class="form__input" placeholder="Введите электронную почту">
+			<input type="email" class="form__input form__input-email" placeholder="Введите электронную почту">
 			<div class="form__input-pass">
 				<p class="form__label">Пароль</p>
 				<input type="password" class="form__input" placeholder="Введите пароль">
 				<!-- /.form__input -->
-				<button class="form__pass-eye">
+				<button class="form__pass-eye form__pass-eye-reg">
 					<img src="img/eye.svg" alt="eye">
 				</button>
 			</div>
@@ -368,7 +430,7 @@
 							<div class="account__content-item content-item tab-item">
 								<div class="content-item__nomination">
 									<div class="content-item__nomination-item nomination-item">
-										<div class="nomination-item__title">
+										<div class="nomination-item__title item-title">
 											<div class="nomination-item__title-text">
 												Медвежья Миля (1000 километров менее чем за 24 часа зимой,
 												севернее Мюнхена-Киева-Воронежа) норматив ВВМС
@@ -379,7 +441,7 @@
 											<!-- /.nomination-item__title-icon -->
 										</div>
 										<!-- /.nomination-item__title -->
-										<div class="nomination-item__content">
+										<div class="nomination-item__content item-content">
 											<ul class="nomination-item__list">
 												<li class="nomination-item__descr">
 													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
@@ -418,7 +480,7 @@
 									<!-- /.content-item__nomination-item -->
 
 									<div class="content-item__nomination-item nomination-item">
-										<div class="nomination-item__title">
+										<div class="nomination-item__title item-title">
 											<div class="nomination-item__title-text">
 												SaddleSore 1000/1600K (1000 miles or 1600 km in less than 24 hours)
 											</div>
@@ -428,7 +490,7 @@
 											<!-- /.nomination-item__title-icon -->
 										</div>
 										<!-- /.nomination-item__title -->
-										<div class="nomination-item__content">
+										<div class="nomination-item__content item-content">
 											<ul class="nomination-item__list">
 												<li class="nomination-item__descr">
 													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
@@ -467,7 +529,7 @@
 									<!-- /.content-item__nomination-item -->
 
 									<div class="content-item__nomination-item nomination-item">
-										<div class="nomination-item__title">
+										<div class="nomination-item__title item-title">
 											<div class="nomination-item__title-text">
 												Россия 2500 (2500 километров по России менее чем за 24 часа)
 											</div>
@@ -477,7 +539,7 @@
 											<!-- /.nomination-item__title-icon -->
 										</div>
 										<!-- /.nomination-item__title -->
-										<div class="nomination-item__content">
+										<div class="nomination-item__content item-content">
 											<ul class="nomination-item__list">
 												<li class="nomination-item__descr">
 													<div class="nomination-item__name">Мюнхен-Киев-Воронеж</div>
@@ -563,7 +625,7 @@
 										<p class="new-proposal__category-name">Выбор категории</p>
 										<!-- /.new-proposal__category-name -->
 										<div class="new-proposal__category-dropdown category-dropdown">
-											<div class="category-dropdown__title nomination-item__title">
+											<div class="category-dropdown__title item-title">
 												<div class="category-dropdown__text">
 
 												</div>
@@ -574,7 +636,7 @@
 												<!-- /.category-dropdown__icon -->
 											</div>
 											<!-- /.category-dropdown__title -->
-											<ul class="category-dropdown__list nomination-item__content">
+											<ul class="category-dropdown__list item-content">
 												<li class="category-dropdown__item">
 													Россия 2500 (2500 километров по России менее чем за 24 часа)
 												</li>

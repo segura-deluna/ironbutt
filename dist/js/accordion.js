@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // * =================================================================
 
   function accordions() {
-    const accordions = document.querySelectorAll('.nomination-item__title');
-    const contents = document.querySelectorAll('.nomination-item__content');
+    const accordions = document.querySelectorAll('.item-title');
+    const contents = document.querySelectorAll('.item-content');
 
     accordions.forEach((itemAcc) => {
       itemAcc.addEventListener('click', (event) => {

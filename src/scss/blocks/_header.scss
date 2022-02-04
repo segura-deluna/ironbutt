@@ -220,6 +220,7 @@
   @media (max-width: 760px) {
     display: flex;
     position: fixed;
+    z-index: 50;
   }
   @media (max-width: 360px) {
     height: 60px;
@@ -500,6 +501,10 @@
   }
 }
 
+.modal-reg {
+  z-index: 120;
+}
+
 .form {
   &__title {
     width: 100%;
@@ -538,6 +543,10 @@
     }
   }
 
+  &__input-email {
+    margin-bottom: 20px !important;
+  }
+
   &__input-pass {
     position: relative;
   }
@@ -551,6 +560,10 @@
     border: none;
     background: var(--white);
     cursor: pointer;
+  }
+
+  &__pass-eye-reg {
+    top: 33px !important;
   }
 
   &__remember {
@@ -618,6 +631,25 @@
     @media (max-width: 480px) {
       width: 100%;
       margin-right: 0;
+    }
+  }
+
+  &__submit-reg {
+    width: 254px;
+    height: 38px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--cerulean);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @media (max-width: 480px) {
+      width: 100%;
     }
   }
 

@@ -33,7 +33,7 @@
     align-items: center;
     margin-bottom: 50px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       flex-wrap: wrap;
     }
   }
@@ -43,7 +43,7 @@
     max-width: 950px;
     margin-right: 30px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       margin-right: 0;
       margin-bottom: 20px;
     }
@@ -58,20 +58,17 @@
   &__category-choice-dropdown {
     width: 100%;
     position: relative;
-
-    & .nomination-item__title.open + .nomination-item__content {
-      padding: 0;
-      border-left: 1px solid var(--silver);
-      border-right: 1px solid var(--silver);
-      border-bottom: 1px solid var(--silver);
-    }
   }
 
   &__category-choice-title {
     height: 38px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--white);
     border: 1px solid var(--silver);
+    cursor: pointer;
   }
 
   &__category-choice-title.open > .awards__category-choice-icon {
@@ -79,8 +76,9 @@
   }
 
   &__category-choice-text {
-    @media (max-width: 870px) {
-      width: 360px;
+    @media (max-width: 890px) {
+      width: 100%;
+      max-width: 560px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -94,23 +92,41 @@
   }
 
   &__category-choice-list {
-    position: absolute;
-    width: 99.8%;
-    background: var(--white);
+    display: none;
+  }
+
+  &__category-choice-title.open {
+    border-bottom: 0;
+  }
+
+  &__category-choice-title.open + .awards__category-choice-list {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    min-height: 130px;
+    background: var(--white);
+    border-left: 1px solid var(--silver);
+    border-right: 1px solid var(--silver);
+    border-bottom: 1px solid var(--silver);
   }
 
   &__category-choice-item {
     width: 100%;
     padding: 10px;
+    background: var(--white);
     cursor: pointer;
+
     &:hover {
       background: var(--silver);
     }
 
-    @media (max-width: 870px) {
-      width: 360px;
+    @media (max-width: 890px) {
+      width: 100%;
+      max-width: 560px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
