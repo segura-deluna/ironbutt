@@ -3648,6 +3648,11 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1280px) {
+  .awards__route {
+    padding-right: 0;
+  }
+}
 @media (max-width: 1165px) {
   .awards__route {
     max-width: 300px;
@@ -3676,14 +3681,26 @@ li {
 }
 
 .awards-card__wrapper {
+  position: relative;
   padding: 100px 0 240px;
   display: flex;
   justify-content: flex-start;
   align-items: start;
 }
+@media (max-width: 1280px) {
+  .awards-card__wrapper {
+    padding: 80px 20px 100px;
+  }
+}
+@media (max-width: 770px) {
+  .awards-card__wrapper {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 760px) {
   .awards-card__wrapper {
     margin-top: 90px;
+    padding: 30px 15px 60px;
   }
 }
 @media (max-width: 360px) {
@@ -3695,16 +3712,54 @@ li {
   width: 187px;
   height: 187px;
 }
+@media (max-width: 460px) {
+  .awards-card__img {
+    width: 150px;
+    height: 150px;
+  }
+}
 .awards-card__description {
   width: 100%;
   max-width: 1040px;
   padding-top: 10px;
+}
+@media (max-width: 460px) {
+  .awards-card__description-title {
+    font-size: 1.6rem;
+  }
 }
 .awards-card__name {
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 30px;
   margin: 0 0 10px 30px;
+}
+@media (max-width: 770px) {
+  .awards-card__name {
+    position: absolute;
+    max-width: 350px;
+    top: 75px;
+    left: 200px;
+  }
+}
+@media (max-width: 760px) {
+  .awards-card__name {
+    top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .awards-card__name {
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 460px) {
+  .awards-card__name {
+    font-size: 1.6rem;
+  }
 }
 
 .footer {
