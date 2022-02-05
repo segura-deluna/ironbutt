@@ -16,4 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+
+  const mileSlider = new Swiper('.mile__slider', {
+    spaceBetween: 10,
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      hide: true,
+    },
+  });
 });

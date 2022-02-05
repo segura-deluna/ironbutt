@@ -94,6 +94,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -1336,6 +1337,11 @@ li {
     padding: 0 20px;
   }
 }
+@media (max-width: 480px) {
+  .mile__wrapper {
+    padding: 0;
+  }
+}
 .mile__description {
   width: 100%;
   max-width: 515px;
@@ -1344,6 +1350,11 @@ li {
   .mile__description {
     max-width: 100%;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .mile__description {
+    margin: 0 20px 30px;
   }
 }
 .mile__title {
@@ -1416,12 +1427,18 @@ li {
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  .mile__button {
+    margin: 25px 20px 0;
+  }
+}
 
 .table {
   display: flex;
 }
 @media (max-width: 760px) {
   .table {
+    display: none;
     width: 100%;
     flex-direction: column;
   }
@@ -1516,7 +1533,6 @@ li {
   width: 546px;
   height: 350px;
   position: relative;
-  background: var(--bg-gray);
 }
 @media (max-width: 760px) {
   .table__content {
@@ -1530,6 +1546,7 @@ li {
   position: absolute;
   padding: 15px 25px;
   border: 2px solid var(--bronze);
+  background: var(--bg-gray);
 }
 @media (max-width: 740px) {
   .table__content-item {
@@ -1538,7 +1555,6 @@ li {
 }
 .table__content-title {
   width: 100%;
-  max-width: 492px;
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
@@ -1565,6 +1581,92 @@ li {
 @media (max-width: 760px) {
   .table__content-text {
     width: 100%;
+  }
+}
+
+.mile__slider {
+  display: none;
+}
+@media (max-width: 760px) {
+  .mile__slider {
+    display: block !important;
+    width: 100%;
+    max-width: 760px;
+    height: 350px;
+  }
+}
+@media (max-width: 360px) {
+  .mile__slider {
+    height: 380px;
+  }
+}
+.mile__slider .table__content-item {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  padding: 15px 25px;
+  border: 2px solid var(--bronze);
+}
+@media (max-width: 740px) {
+  .mile__slider .table__content-item {
+    position: relative;
+  }
+}
+@media (max-width: 480px) {
+  .mile__slider .table__content-item {
+    padding: 15px 0;
+  }
+}
+.mile__slider .table__content-title {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-black);
+  padding-left: 8px;
+  margin-bottom: 30px;
+}
+.mile__slider .table__content-title.table__content-header7 {
+  color: var(--white);
+}
+@media (max-width: 480px) {
+  .mile__slider .table__content-title {
+    font-size: 2rem;
+    line-height: 22px;
+    padding: 5px 0 5px 20px;
+  }
+}
+@media (max-width: 360px) {
+  .mile__slider .table__content-title {
+    font-size: 1.6rem;
+  }
+}
+.mile__slider .table__content-text {
+  width: 440px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-black);
+  margin-bottom: 15px;
+}
+@media (max-width: 760px) {
+  .mile__slider .table__content-text {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .mile__slider .table__content-text {
+    line-height: 20px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .mile__slider .table__content-text {
+    line-height: 19px;
+    font-size: 1.6rem;
   }
 }
 
